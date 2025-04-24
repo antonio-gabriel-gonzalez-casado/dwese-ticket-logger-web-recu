@@ -18,3 +18,19 @@ INSERT IGNORE INTO regions (id, code, name) VALUES
 (16, '16', 'PAÍS VASCO'),
 (17, '17', 'LA RIOJA'),
 (18, '18', 'CEUTA Y MELILLA');
+
+
+-- Insertar algunas categorias en la tabla 'categories'
+INSERT IGNORE INTO categories (id, name, image, parent_id) VALUES
+(1, 'Electrónica', NULL, NULL),
+(2, 'Ropa', NULL, NULL),
+(3, 'Hogar y Cocina', NULL, NULL),
+(4, 'Smartphones', NULL, 1),
+(5, 'Portátiles', NULL, 1),
+(6, 'Televisores', NULL, 1),
+(7, 'Ropa de Hombre', NULL, 2),
+(8, 'Ropa de Mujer', NULL, 2),
+(9, 'Ropa Infantil', NULL, 2),
+(10, 'Muebles', NULL, 3),
+(11, 'Electrodomésticos de Cocina', NULL, 3),
+(12, 'Decoración', NULL, 3);
